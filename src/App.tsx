@@ -1,5 +1,11 @@
-export default function App() {
+import { HelmetProvider } from "react-helmet-async"
+
+function App() {
   return (
-    <div>App</div>
+    <HelmetProvider>
+      <div>App</div>
+    </HelmetProvider>
   )
 }
+
+export default App
